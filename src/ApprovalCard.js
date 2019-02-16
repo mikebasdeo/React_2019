@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const ApprovalCard = () => {
+const ApprovalCard = (props) => {
 
     return (
 
@@ -10,35 +10,15 @@ const ApprovalCard = () => {
 <div className="ui cards">
   <div className="card">
     <div className="content">
-      <img alt="addaltlater" className="right floated mini ui image" src="/images/avatar/large/elliot.jpg"/>
+      <img alt="addaltlater" className="right floated mini ui image" src={props.avatar}/>
       <div className="header">
-        Elliot Fu
+        {props.author}
       </div>
       <div className="meta">
-        Friends of Veronika
+        {props.timeAgo}
       </div>
       <div className="description">
-        Elliot requested permission to view your contact details
-      </div>
-    </div>
-    <div className="extra content">
-      <div className="ui two buttons">
-        <div className="ui basic green button">Approve</div>
-        <div className="ui basic red button">Decline</div>
-      </div>
-    </div>
-  </div>
-  <div className="card">
-    <div className="content">
-      <img alt="addaltlater" className="right floated mini ui image" src="/images/avatar/large/jenny.jpg" title="" />
-      <div className="header">
-        Jenny Hess
-      </div>
-      <div className="meta">
-        New Member
-      </div>
-      <div className="description">
-        Jenny wants to add you to the group <b>best friends</b>
+        {props.content}
       </div>
     </div>
     <div className="extra content">
