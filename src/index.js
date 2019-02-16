@@ -8,33 +8,24 @@ const App = () => {
     return (
         <div className="ui container comments">
 
-
-            <ApprovalCard
-                    author={faker.name.firstName() +" " + faker.name.lastName()} 
-                    timeAgo={faker.date.weekday()}
-                    avatar={faker.image.avatar()}
-                    content={faker.lorem.paragraph()}
-            />
-            <ApprovalCard
-                    author={faker.name.firstName() +" " + faker.name.lastName()} 
-                    timeAgo={faker.date.weekday()}
-                    avatar={faker.image.avatar()}
-                    content={faker.lorem.paragraph()}
-            />
-            <ApprovalCard
-                    author={faker.name.firstName() +" " + faker.name.lastName()} 
-                    timeAgo={faker.date.weekday()}
-                    avatar={faker.image.avatar()}
-                    content={faker.lorem.paragraph()}
-            />
-            
-{/* 
-            <CommentDetail 
+            <ApprovalCard>
+                    <CommentDetail 
+                            author={faker.name.firstName() +" " + faker.name.lastName()} 
+                            timeAgo={faker.date.weekday()}
+                            avatar={faker.image.avatar()}
+                            content={faker.lorem.paragraph()}
+                    /> 
+            </ApprovalCard>
+            {/* <ApprovalCard
                     author={faker.name.firstName() +" " + faker.name.lastName()} 
                     timeAgo={faker.date.weekday()}
                     avatar={faker.image.avatar()}
                     content={faker.lorem.paragraph()}
             /> */}
+
+            
+
+
 
         </div>
 

@@ -10,16 +10,7 @@ const ApprovalCard = (props) => {
 <div className="ui cards">
   <div className="card">
     <div className="content">
-      <img alt="addaltlater" className="right floated mini ui image" src={props.avatar}/>
-      <div className="header">
-        {props.author}
-      </div>
-      <div className="meta">
-        {props.timeAgo}
-      </div>
-      <div className="description">
-        {props.content}
-      </div>
+        {props.children}
     </div>
     <div className="extra content">
       <div className="ui two buttons">
